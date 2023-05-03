@@ -1,13 +1,124 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.navigation-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.navigation-menu .logo span img {
+  height: 50px;
+  width: 50px;
+}
+
+.logo-size {
+  height: 30px;
+  width: 30px;
+}
+
+.navigation-link-list {
+  display: flex;
+  flex-direction: row;
+  padding-right: 20px;
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.navigation-link-list li {
+  padding: 0 20px;
+}
+
+/* Product page design */
+.product-container {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  font-family: "Montserrat", sans-serif;
+  width: 100vw;
+  height: 100vh;
+  padding: 10px;
+}
+/* product-side-menu */
+.product-side-menu {
+  display: flex;
+  flex-direction: column;
+  overflow: scroll;
+  width: 15vw;
+  height: calc(100vh - 80px);
+  padding: 10px;
+}
+
+/* designing the button to have a nice smooth dark purple background  */
+.product-side-menu button {
+  display: flex;
+  align-items: center;
+  background-image: linear-gradient(to bottom, #c13584, #d81f60);
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 15px;
+  margin: 10px 0;
+  width: 200px;
+  height: 30px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* on hover animation of the button */
+.product-side-menu button:hover {
+  background-image: linear-gradient(to bottom, #d81f60, #e1306c);
+  cursor: pointer;
+}
+
+/* adding a smooth transition or animation when the button is clicked */
+.product-side-menu button:active {
+  transition: all 0.5s ease;
+  transform: scale(0.9);
+}
+
+/* add smoothe transition to dropdown menu */
+.product-side-menu .dropdown {
+  transition: all 0.5s ease;
+}
+
+/* product-detail-container, add a nice slightly curved border, a light smooth box-shadow */
+.product-detail-container {
+  display: flex;
+  flex-direction: column;
+  width: 85vw;
+  overflow: scroll;
+  padding: 30px;
+  font-family: "Open Sans", sans-serif;
+}
+
+/* adding space or margin to the li tag of the product-side-menu to have an even distance that takes the height of the product side menu */
+.product-side-menu li {
+  margin: 15px 0;
+}
+/* designing the button image icon */
+.product-side-menu .side-menu-icon {
+  height: 20px;
+  width: 20px;
+  margin-right: 10px;
+}
+
+.helpCenter {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 30px;
 }
