@@ -13,14 +13,17 @@ export default function ProductContent(props) {
   return (
     <div className="product-content-container">
       {defaultPage ? (
-        <ProductDefaultPage featured={props.featured} />
+        <ProductDefaultPage
+          featured={props.featured}
+          shopNow={props.handleShopNow}
+        />
       ) : (
         <>
-          {selectedCategory === "Afro Wig" && <AfroWigs />}
-          {selectedCategory === "Braided Wig" && <BraidedWigs />}
-          {selectedCategory === "Colored Wig" && <ColoredWigs />}
-          {selectedCategory === "Human Wig" && <HumanWigs />}
-          {selectedCategory === "Lace Wig" && <LacedWigs />}
+          {selectedCategory === "Afro Wigs" && <AfroWigs />}
+          {selectedCategory === "Braided Wigs" && <BraidedWigs />}
+          {selectedCategory === "Colored Wigs" && <ColoredWigs />}
+          {selectedCategory === "Human Wigs" && <HumanWigs />}
+          {selectedCategory === "Lace Wigs" && <LacedWigs />}
           {selectedCategory === "Wig Accessories" && <WigAccessories />}
         </>
       )}

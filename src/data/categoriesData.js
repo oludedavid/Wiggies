@@ -1,7 +1,7 @@
 export default [
   {
     id: 1,
-    name: "Braided Wig",
+    name: "Braided Wigs",
     icon: "./images/side-menu-icon/braided.png",
     items: [
       { name: "Box Braid" },
@@ -13,7 +13,7 @@ export default [
   },
   {
     id: 2,
-    name: "Human Wig",
+    name: "Human Wigs",
     icon: "./images/side-menu-icon/hairstyle.png",
     items: [
       { name: "Curly Human Hair" },
@@ -26,7 +26,7 @@ export default [
   },
   {
     id: 3,
-    name: "Lace Wig",
+    name: "Lace Wigs",
     icon: "./images/side-menu-icon/hair-dye.png",
     items: [
       { name: "Colored Lace Wig" },
@@ -38,7 +38,7 @@ export default [
   },
   {
     id: 4,
-    name: "Colored Wig",
+    name: "Colored Wigs",
     icon: "./images/side-menu-icon/hair-color.png",
     items: [
       { name: "Blonde Colored Wig" },
@@ -49,7 +49,7 @@ export default [
   },
   {
     id: 5,
-    name: "Afro Wig",
+    name: "Afro Wigs",
     icon: "./images/side-menu-icon/afro.png",
     items: [
       { name: "Afro Curly" },

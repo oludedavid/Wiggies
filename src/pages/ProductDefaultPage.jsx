@@ -6,13 +6,16 @@ export default function ProductDefaultPage(props) {
       <div className="product-default-page">
         <img src="./images/productLanding/pic5.jpg" />
         <div className="overlay">
+          <p className="text-4xl md:text-5xl lg:text-6xl font-bold text-white tracking-wider text-center mb-6">
+            Wig it! feel it!
+          </p>
+
           <h1 className="animate__animated  animate__zoomIn">
             Discover Your Perfect Wig Today!
           </h1>
           <p>
-            Discover your perfect wig at our collection. Made with high-quality
-            materials and designed to look and feel natural, our wigs will help
-            you confidently rock any style you desire.
+            Discover your perfect wig today! High-quality, natural-looking wigs
+            to suit your style and needs.
           </p>
           <a href="#featured-container">Featured Products</a>
         </div>
@@ -25,7 +28,13 @@ export default function ProductDefaultPage(props) {
               <div className="featured-product-card-overlay">
                 <h1>{product.name}</h1>
                 <p>{product.description}</p>
-                <button>Shop Now</button>
+                <button
+                  onClick={() => {
+                    props.shopNow(product.name);
+                  }}
+                >
+                  Shop Now
+                </button>
               </div>
             </div>
           );

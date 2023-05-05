@@ -42,6 +42,7 @@ export default function Product() {
           selectedCategory={selectedCategory}
           defaultPage={defaultPage}
           featured={featured}
+          handleShopNow={handleSelectedCategory}
         />
       </main>
     </div>

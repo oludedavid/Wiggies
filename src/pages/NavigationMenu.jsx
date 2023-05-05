@@ -53,11 +53,19 @@ export default function NavigationMenu() {
           <li>
             <Link to="/sign-up">
               <img
-                src="./images/nav-img/profiling.png"
+                src="./images/nav-img/add-user.png"
                 alt="Shopping Cart"
                 className="logo-size signup--image"
               />
             </Link>
+          </li>
+
+          <li>
+            <img
+              src="./images/ratings/empty-heart.png"
+              alt="Search"
+              className="logo-size search--image"
+            />
           </li>
         </ul>
       </div>

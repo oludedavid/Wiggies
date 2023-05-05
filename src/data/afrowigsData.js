@@ -11,6 +11,7 @@ export default [
         rating: 4.5,
         availability: true,
         description: "Medium Box Braids are a great protective style.",
+        vendorName: "Hair by Tessy",
         reviews: [
           {
             user: "John Doe",
@@ -27,9 +28,10 @@ export default [
       {
         name: "Long Box Braids",
         price: 120,
-        image: "./images/afrowig/lonBoxBraid.jpg",
+        image: "./images/afrowig/longBoxBraid.jpg",
         availability: true,
         description: "They are versatile and can be styled in many ways.",
+        vendorName: "Hair by Jasmine",
         quantity: 5,
         rating: 4.2,
         reviews: [
@@ -59,6 +61,7 @@ export default [
           "https://cdn.shopify.com/s/files/1/0084/5535/6479/products/KXTUSA16_Springy-Afro-Twist_1B_2000x.jpg?v=1628718211",
         availability: true,
         description: "Twists offers a adoring curly look.",
+        vendorName: "Renee's Hair",
         reviews: [
           {
             user: "David Lee",
@@ -81,6 +84,7 @@ export default [
           "https://cdn.shopify.com/s/files/1/0084/5535/6479/products/3XAfroTwist16-1_2000x.jpg?v=1623683013",
         availability: true,
         description: "They are versatile and can be styled in many ways.",
+        vendorName: "Ella's Hair",
         reviews: [
           {
             user: "Sarah Johnson",
@@ -103,6 +107,7 @@ export default [
           "https://cdn.shopify.com/s/files/1/0084/5535/6479/products/freetress_synthetic_braids_deep_twist_10a_2000x.jpg?v=1569338642",
         availability: true,
         description: "deep twists for adoring look.",
+        vendorName: "Faithy's Hair",
         reviews: [
           {
             user: "Tessy Williams",
@@ -126,10 +131,10 @@ export default [
         price: 60,
         quantity: 15,
         rating: 4.7,
-        image:
-          "https://i0.wp.com/www.hadviser.com/wp-content/uploads/2022/07/9-ponytail-with-beads-CZHveSjIRHo.jpg?resize=1080%2C1170&ssl=1",
+        image: "./images/afrowig/cornrows_with_beads.webp",
         availability: true,
         description: "Cornrows with beads for adoring look.",
+        vendorName: "Hair by Tessy",
         reviews: [
           {
             user: "Lisa Brown",
@@ -152,6 +157,7 @@ export default [
           "https://www.darlingafrica.com/ghana/blog/wp-content/uploads/2018/05/Your-Cornrow-Bible-For-The-year-1.jpg",
         availability: true,
         description: "Cornrows with extensions for adoring look.",
+        vendorName: "Hair by Jasmine",
         reviews: [
           {
             user: "Jessica Lee",
@@ -171,9 +177,10 @@ export default [
         price: 60,
         quantity: 15,
         rating: 4.7,
-        image: "https://example.com/long-box-braids.jpg",
+        image: "./images/afrowig/cornrows.webp",
         availability: true,
         description: "Cornrows with beads for adoring look.",
+        vendorName: "Racheals delight",
         reviews: [
           {
             user: "Lisa Brown",
@@ -197,6 +204,7 @@ export default [
           "https://cdn.shopify.com/s/files/1/0747/3963/files/blog_braids-cornrows_grande.jpg?7193400089306985301",
         availability: true,
         description: "Cornrows with beads and extensions for adoring look.",
+        vendorName: "Hair by Tessy",
         reviews: [
           {
             user: "James Parker",
