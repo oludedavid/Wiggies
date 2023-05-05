@@ -8,7 +8,7 @@ body {
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
 }
-
+/* make the navigation menu have a fixed position at the top */
 .navigation-menu {
   display: flex;
   flex-direction: row;
@@ -16,6 +16,13 @@ body {
   align-items: center;
   padding: 15px;
   font-family: "Montserrat", sans-serif;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 80px;
+  background-color: white;
+  z-index: 100;
 }
 
 .navigation-menu .logo span img {
@@ -42,6 +49,35 @@ body {
   padding: 0 20px;
 }
 
+/* underline hover effect */
+.primary-menu .navigation-link-list li {
+  position: relative;
+  display: block;
+  transition: 0.5s;
+}
+
+.primary-menu .navigation-link-list li::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 100%;
+  height: 2px;
+  width: 90%;
+  margin-left: 2px;
+  background-color: #c13584;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.5s ease-in-out;
+}
+
+.primary-menu .navigation-link-list li:hover {
+  color: #c13584;
+}
+.primary-menu .navigation-link-list li:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
 /* Product page design */
 .product-container {
   position: relative;
@@ -51,7 +87,10 @@ body {
   font-family: "Montserrat", sans-serif;
   width: 100vw;
   height: 100vh;
-  padding: 10px;
+  padding-top: 90px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
 }
 /* product-side-menu */
 .product-side-menu {
@@ -67,20 +106,21 @@ body {
 .product-side-menu button {
   display: flex;
   align-items: center;
-  background-image: linear-gradient(to bottom, #c13584, #d81f60);
-  color: white;
+  color: black;
   border: none;
   padding: 10px;
-  border-radius: 15px;
+
   margin: 10px 0;
   width: 200px;
   height: 30px;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 /* on hover animation of the button */
 .product-side-menu button:hover {
-  background-image: linear-gradient(to bottom, #d81f60, #e1306c);
+  background-image: linear-gradient(to bottom, #c13584, #d81f60);
+  color: white;
+  border-radius: 12px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
   cursor: pointer;
 }
 
@@ -93,21 +133,159 @@ body {
 /* add smoothe transition to dropdown menu */
 .product-side-menu .dropdown {
   transition: all 0.5s ease;
+  text-align: center;
+  font-weight: bold;
+  font-size: 0.9rem;
 }
 
 /* product-detail-container, add a nice slightly curved border, a light smooth box-shadow */
 .product-detail-container {
   display: flex;
   flex-direction: column;
-  width: 85vw;
+  width: 80vw;
+  height: 100vh;
   overflow: scroll;
-  padding: 30px;
+  padding: 40px;
   font-family: "Open Sans", sans-serif;
+}
+
+/* produt landing/default page */
+.product-default-page {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.product-default-page img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 12px;
+}
+.product-default-page .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  padding: 0 20px;
+  border-radius: 12px;
+}
+
+.product-default-page .overlay h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  max-width: 400px;
+  padding: 0.5rem;
+}
+
+.product-default-page .overlay p {
+  font-size: 1.5rem;
+  font-weight: 200;
+  margin-bottom: 20px;
+  max-width: 500px;
+  padding: 1rem;
+}
+.product-default-page .overlay a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #c13584;
+  color: white;
+  text-decoration: none;
+  border-radius: 12px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  transition: all 0.5s ease;
+}
+
+.product-default-page .overlay a:hover {
+  background-color: #d81f60;
+}
+/* featured product */
+#featured-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  padding: 50px;
+}
+
+.featured-product-card {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  border-radius: 12px;
+}
+
+.featured-product-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 12px;
+}
+
+.featured-product-card-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  gap: 35px;
+  padding: 0 20px;
+  border-radius: 12px;
+}
+
+.featured-product-card-overlay button {
+  display: inline-block;
+  padding: 5px 20px;
+  background-color: #c13584;
+  color: white;
+  text-decoration: none;
+  border-radius: 12px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  transition: all 0.5s ease;
+}
+
+.featured-product-card-overlay button:hover {
+  background-color: transparent;
+  border: 0.5px solid #c13584;
+}
+
+.featured-product-card-overlay h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  max-width: 400px;
+  padding: 0.5rem;
+}
+
+/* content container */
+.product-content-container {
+  width: 100%;
+  height: 100%;
 }
 
 /* adding space or margin to the li tag of the product-side-menu to have an even distance that takes the height of the product side menu */
 .product-side-menu li {
-  margin: 15px 0;
+  margin: 25px 0;
 }
 /* designing the button image icon */
 .product-side-menu .side-menu-icon {
@@ -121,4 +299,43 @@ body {
   flex-direction: row;
   align-items: center;
   margin-top: 30px;
+}
+
+/* about container */
+.about-container {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  padding-top: 90px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* blog container */
+.blog-container {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  padding-top: 90px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* home */
+.home {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  padding-top: 100px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  font-family: "Montserrat", sans-serif;
 }

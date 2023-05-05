@@ -1,0 +1,76 @@
+export default [
+  {
+    id: 1,
+    name: "Braided Wig",
+    icon: "./images/side-menu-icon/braided.png",
+    items: [
+      { name: "Box Braid" },
+      { name: "Corn crows Braid" },
+      { name: "Micro Braid" },
+      { name: "Twist Braid" },
+    ],
+    isSelected: false,
+  },
+  {
+    id: 2,
+    name: "Human Wig",
+    icon: "./images/side-menu-icon/hairstyle.png",
+    items: [
+      { name: "Curly Human Hair" },
+      { name: "Full Lace Human Hair" },
+      { name: "Long Human Hair" },
+      { name: "Bone Straight" },
+      { name: "Wavy Human Hair" },
+    ],
+    isSelected: false,
+  },
+  {
+    id: 3,
+    name: "Lace Wig",
+    icon: "./images/side-menu-icon/hair-dye.png",
+    items: [
+      { name: "Colored Lace Wig" },
+      { name: "Transparent Lace wig" },
+      { name: "Full Lace Wig" },
+      { name: "Lace Front Wig" },
+    ],
+    isSelected: false,
+  },
+  {
+    id: 4,
+    name: "Colored Wig",
+    icon: "./images/side-menu-icon/hair-color.png",
+    items: [
+      { name: "Blonde Colored Wig" },
+      { name: "Brunette Colored Wig" },
+      { name: "Red Colored Wig" },
+    ],
+    isSelected: false,
+  },
+  {
+    id: 5,
+    name: "Afro Wig",
+    icon: "./images/side-menu-icon/afro.png",
+    items: [
+      { name: "Afro Curly" },
+      { name: "Afro Puff" },
+      { name: "Kinky Afro" },
+      { name: "Lace Afro" },
+      { name: "Long Afro" },
+      { name: "Short Afro" },
+    ],
+    isSelected: false,
+  },
+  {
+    id: 6,
+    name: "Wig Accessories",
+    icon: "./images/side-menu-icon/hairAcc.png",
+    items: [
+      { name: "Wig Cap" },
+      { name: "Wig Stand" },
+      { name: "Wig Tape" },
+      { name: "Wig Clips" },
+    ],
+    isSelected: false,
+  },
+];
