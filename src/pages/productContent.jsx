@@ -19,7 +19,12 @@ export default function ProductContent(props) {
         />
       ) : (
         <>
-          {selectedCategory === "Afro Wigs" && <AfroWigs />}
+          {selectedCategory === "Afro Wigs" && (
+            <AfroWigs
+              afrowigs={props.afrowigs}
+              onAfroWigSelect={props.handleSelectedAfrowig}
+            />
+          )}
           {selectedCategory === "Braided Wigs" && <BraidedWigs />}
           {selectedCategory === "Colored Wigs" && <ColoredWigs />}
           {selectedCategory === "Human Wigs" && <HumanWigs />}

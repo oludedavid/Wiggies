@@ -10,6 +10,7 @@ export default [
         quantity: 10,
         rating: 4.5,
         availability: true,
+        isSelected: false,
         description: "Medium Box Braids are a great protective style.",
         vendorName: "Hair by Tessy",
         reviews: [
@@ -30,6 +31,7 @@ export default [
         price: 120,
         image: "./images/afrowig/longBoxBraid.jpg",
         availability: true,
+        isSelected: false,
         description: "They are versatile and can be styled in many ways.",
         vendorName: "Hair by Jasmine",
         quantity: 5,
@@ -60,6 +62,7 @@ export default [
         image:
           "https://cdn.shopify.com/s/files/1/0084/5535/6479/products/KXTUSA16_Springy-Afro-Twist_1B_2000x.jpg?v=1628718211",
         availability: true,
+        isSelected: false,
         description: "Twists offers a adoring curly look.",
         vendorName: "Renee's Hair",
         reviews: [
@@ -83,6 +86,7 @@ export default [
         image:
           "https://cdn.shopify.com/s/files/1/0084/5535/6479/products/3XAfroTwist16-1_2000x.jpg?v=1623683013",
         availability: true,
+        isSelected: false,
         description: "They are versatile and can be styled in many ways.",
         vendorName: "Ella's Hair",
         reviews: [
@@ -106,6 +110,7 @@ export default [
         image:
           "https://cdn.shopify.com/s/files/1/0084/5535/6479/products/freetress_synthetic_braids_deep_twist_10a_2000x.jpg?v=1569338642",
         availability: true,
+        isSelected: false,
         description: "deep twists for adoring look.",
         vendorName: "Faithy's Hair",
         reviews: [
@@ -134,6 +139,7 @@ export default [
         image: "./images/afrowig/cornrows_with_beads.webp",
         availability: true,
         description: "Cornrows with beads for adoring look.",
+        isSelected: false,
         vendorName: "Hair by Tessy",
         reviews: [
           {
@@ -157,6 +163,7 @@ export default [
           "https://www.darlingafrica.com/ghana/blog/wp-content/uploads/2018/05/Your-Cornrow-Bible-For-The-year-1.jpg",
         availability: true,
         description: "Cornrows with extensions for adoring look.",
+        isSelected: false,
         vendorName: "Hair by Jasmine",
         reviews: [
           {
@@ -179,6 +186,7 @@ export default [
         rating: 4.7,
         image: "./images/afrowig/cornrows.webp",
         availability: true,
+        isSelected: false,
         description: "Cornrows with beads for adoring look.",
         vendorName: "Racheals delight",
         reviews: [
@@ -204,6 +212,7 @@ export default [
           "https://cdn.shopify.com/s/files/1/0747/3963/files/blog_braids-cornrows_grande.jpg?7193400089306985301",
         availability: true,
         description: "Cornrows with beads and extensions for adoring look.",
+        isSelected: false,
         vendorName: "Hair by Tessy",
         reviews: [
           {

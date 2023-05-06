@@ -8,14 +8,12 @@ body {
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
 }
-/* make the navigation menu have a fixed position at the top */
+
+/* 1. Navigation tab menu */
 .navigation-menu {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 15px;
-  font-family: "Montserrat", sans-serif;
   position: fixed;
   top: 0;
   left: 0;
@@ -23,11 +21,13 @@ body {
   height: 80px;
   background-color: white;
   z-index: 100;
+  padding: 15px;
 }
 
+/* Navigation logo */
 .navigation-menu .logo span img {
-  height: 50px;
-  width: 50px;
+  height: 40px;
+  width: 40px;
 }
 
 .logo-size {
@@ -35,34 +35,62 @@ body {
   width: 30px;
 }
 
+/* Navigation links */
 .navigation-link-list {
   display: flex;
-  flex-direction: row;
-  padding-right: 20px;
   list-style: none;
   align-items: center;
   justify-content: center;
   text-align: center;
+  padding-right: 30px;
 }
 
 .navigation-link-list li {
   padding: 0 20px;
 }
 
-/* underline hover effect */
+/* Shopping cart icon */
+.shopping-cart-list-icon-container {
+  position: relative;
+}
+
+.shopping-cart-image {
+  position: relative;
+  display: block;
+  height: 40px;
+  width: 40px;
+}
+
+/* Shopping cart item count */
+.shopping-cart-item-count {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  width: 30px;
+  height: 30px;
+  background-color: #f00;
+  color: black;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  padding: 7px;
+  border-radius: 50%;
+}
+
+/* Underline hover effect */
 .primary-menu .navigation-link-list li {
   position: relative;
   display: block;
-  transition: 0.5s;
+  transition: transform 0.5s ease-in-out, color 0.5s;
 }
 
 .primary-menu .navigation-link-list li::after {
-  position: absolute;
   content: "";
+  position: absolute;
   left: 0;
   top: 100%;
-  height: 2px;
   width: 90%;
+  height: 2px;
   margin-left: 2px;
   background-color: #c13584;
   transform: scaleX(0);
@@ -73,18 +101,18 @@ body {
 .primary-menu .navigation-link-list li:hover {
   color: #c13584;
 }
+
 .primary-menu .navigation-link-list li:hover::after {
   transform: scaleX(1);
   transform-origin: left;
 }
 
-/* Product page design */
+/* 2. Product page tab design */
 .product-container {
   position: relative;
   display: flex;
   flex-direction: row;
   gap: 25px;
-  font-family: "Montserrat", sans-serif;
   width: 100vw;
   height: 100vh;
   padding-top: 90px;
@@ -102,7 +130,7 @@ body {
   padding: 10px;
 }
 
-/* designing the button to have a nice smooth dark purple background  */
+/* product button  */
 .product-side-menu button {
   display: flex;
   align-items: center;
@@ -115,7 +143,6 @@ body {
   height: 30px;
 }
 
-/* on hover animation of the button */
 .product-side-menu button:hover {
   background-image: linear-gradient(to bottom, #c13584, #d81f60);
   color: white;
@@ -124,13 +151,13 @@ body {
   cursor: pointer;
 }
 
-/* adding a smooth transition or animation when the button is clicked */
+/* smooth transition or animation when the button is clicked */
 .product-side-menu button:active {
   transition: all 0.5s ease;
   transform: scale(0.9);
 }
 
-/* add smoothe transition to dropdown menu */
+/* smoothe transition to dropdown menu */
 .product-side-menu .dropdown {
   transition: all 0.5s ease;
   text-align: center;
@@ -283,11 +310,11 @@ body {
   height: 100%;
 }
 
-/* adding space or margin to the li tag of the product-side-menu to have an even distance that takes the height of the product side menu */
+/* side menu */
 .product-side-menu li {
   margin: 25px 0;
 }
-/* designing the button image icon */
+/* side menu  icon */
 .product-side-menu .side-menu-icon {
   height: 20px;
   width: 20px;
@@ -372,6 +399,7 @@ body {
   border-radius: 12px;
 }
 
+/* product card button */
 .like-button-container {
   height: 40px;
   width: 40px;
@@ -449,11 +477,11 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-/* afro container */
+/* afro product list  container */
 .afroWig-container {
   display: flex;
   flex-direction: column;
-  font-family: "Montserrat", sans-serif;
+
   gap: 20px;
 }
 
@@ -465,41 +493,189 @@ body {
   gap: 10px;
 }
 
-/* about container */
+/* for the different containers container */
+.page-container {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  padding-top: 90px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+}
+
+/* 3. about container */
 .about-container {
-  display: flex;
-  flex-direction: column;
-  width: 100vw;
-  height: 100vh;
-  padding-top: 90px;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-bottom: 10px;
-  font-family: "Montserrat", sans-serif;
 }
 
-/* blog container */
+/* 4. blog container */
 .blog-container {
+}
+
+/* 5.  home */
+.home {
+}
+
+/* 6.  signup container */
+.signup-container {
+}
+
+/* 7. like page */
+.liked-product-page-container {
+}
+
+/* 8. shopping cart */
+.shopping-cart-container {
   display: flex;
   flex-direction: column;
-  width: 100vw;
-  height: 100vh;
-  padding-top: 90px;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-bottom: 10px;
+  font-family: "Montserrat", sans-serif;
+  padding-top: 100px;
+}
+.shopping-cart-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.shoppingCart-assurance {
+  gap: 10px;
+  padding: 16px;
+  font-size: 0.8rem;
+  width: 80%;
+  height: 40px;
+  background-color: #9f7aea;
+  color: white;
+  padding: 3px;
+}
+.shoppingCart-assurance .icons {
+  height: 30px;
+  width: 30px;
+}
+.shopping-cart-content-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+.shopping-cart-items-container {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* shopping cart tab checkout content  */
+.checkout-container {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
   font-family: "Montserrat", sans-serif;
 }
 
-/* home */
-.home {
+.checkout-container hr {
+  border: 0.5px solid #c13584;
+  width: 100%;
+}
+
+.pay-by-cards,
+.card-payment-options,
+.google-pay,
+.klarna,
+.pay-by-paypal,
+.klarna-label {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.card-img {
+  width: 50px;
+  height: 50px;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.checkout-item-sum-container,
+.checkout-delivery-sum-container,
+.checkout-total-container,
+.checkout-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.checkout-btn {
+  background-color: #333;
+  color: #fff;
+  border: 2px solid #333;
+  padding: 10px 20px;
+  transition: background-color 0.2s, color 0.2s, border-color 0.2s;
+  border-radius: 20px;
+  width: 300px;
+}
+
+.checkout-btn:hover {
+  background-color: #000;
+  border-color: #000;
+}
+
+/* shopping cart items list card */
+.shopping-cart-item-card {
   display: flex;
   flex-direction: column;
-  width: 100vw;
-  height: 100vh;
-  padding-top: 100px;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-bottom: 10px;
-  font-family: "Montserrat", sans-serif;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  border: 1px solid #c13584;
+  border-radius: 12px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  width: 70%;
+  height: 500px;
+}
+.shopping-card-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+.item-image-container {
+  width: 30%;
+  height: 100px;
+}
+
+.item-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 12px;
+}
+.item-details {
+  width: 80%;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.item-price {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.delivery-date {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
 }

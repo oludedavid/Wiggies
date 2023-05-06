@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-export default function NavigationMenu() {
+export default function NavigationMenu({ numberOfItemsInCart }) {
   return (
     <nav className="navigation-menu">
       <div className="logo flex items-center pl-6 ml-3">
@@ -40,7 +40,7 @@ export default function NavigationMenu() {
             />
           </li>
 
-          <li>
+          <li className="shoppinCart-list-icon-container">
             <Link to="/shopping-cart">
               <img
                 src="./images/nav-img/trolley-cart.png"
@@ -48,6 +48,11 @@ export default function NavigationMenu() {
                 className="logo-size shopping-cart--image"
               />
             </Link>
+            {numberOfItemsInCart > 0 && (
+              <span className="shopping-cart-item-count">
+                {numberOfItemsInCart}
+              </span>
+            )}
           </li>
 
           <li>
@@ -61,11 +66,13 @@ export default function NavigationMenu() {
           </li>
 
           <li>
-            <img
-              src="./images/ratings/empty-heart.png"
-              alt="Search"
-              className="logo-size search--image"
-            />
+            <Link to="/liked-product-page">
+              <img
+                src="./images/ratings/empty-heart.png"
+                alt="Heart"
+                className="logo-size Heart--image"
+              />
+            </Link>
           </li>
         </ul>
       </div>

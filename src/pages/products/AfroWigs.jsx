@@ -1,12 +1,11 @@
 import afrowigsData from "../../data/afrowigsData";
 import ProductCard from "../ProductCard";
 import { v4 as uuidv4 } from "uuid";
-export default function AfroWigs() {
-  const afrowigs = afrowigsData;
+export default function AfroWigs(props) {
   return (
     <div className="afroWig-container text-ellipsis">
       <h1 className="text-center text-6xl">Afro Wigs</h1>
-      {afrowigs.map((afrowig) => (
+      {props.afrowigs.map((afrowig) => (
         <div key={afrowig.subcategory}>
           <div className="afro-product-card">
             {afrowig.items.map((item) => (
@@ -21,6 +20,7 @@ export default function AfroWigs() {
                 description={item.description}
                 vendorName={item.vendorName}
                 reviews={item.reviews}
+                handleSelectedAfrowig={() => props.onAfroWigSelect(item)}
               />
             ))}
           </div>

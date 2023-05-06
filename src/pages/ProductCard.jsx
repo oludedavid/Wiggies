@@ -32,7 +32,10 @@ export default function ProductCard(props) {
         </div>
       </div>
       <div className="btn-container ">
-        <button className="product-card-add-to-basket-btn">
+        <button
+          onClick={() => props.handleSelectedAfrowig()}
+          className="product-card-add-to-basket-btn"
+        >
           <img
             className="product-card-add-to-basket-icon"
             src="./images/plus.png"
