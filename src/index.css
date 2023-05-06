@@ -55,7 +55,6 @@ body {
 }
 
 .shopping-cart-image {
-  position: relative;
   display: block;
   height: 40px;
   width: 40px;
@@ -68,8 +67,8 @@ body {
   right: -10px;
   width: 30px;
   height: 30px;
-  background-color: #f00;
-  color: black;
+  background-color: #c13584;
+  color: white;
   font-size: 14px;
   font-weight: bold;
   text-align: center;
@@ -524,58 +523,117 @@ body {
 /* 7. like page */
 .liked-product-page-container {
 }
-
+/* for all icons */
+.image-icon {
+  height: 30px;
+  width: 30px;
+}
+.card-image {
+  height: 200px;
+  width: 200px;
+}
 /* 8. shopping cart */
+::-webkit-scrollbar {
+  display: none;
+}
 .shopping-cart-container {
+  padding-top: 50px;
+  margin-top: 30px;
   display: flex;
   flex-direction: column;
-  font-family: "Montserrat", sans-serif;
-  padding-top: 100px;
 }
-.shopping-cart-header {
+.shopping-cart-content-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
+  gap: 10px;
+}
+header.shopping-cart-header {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 30px;
 }
-.shoppingCart-assurance {
-  gap: 10px;
-  padding: 16px;
-  font-size: 0.8rem;
-  width: 80%;
-  height: 40px;
+.shoppingCart-assurance-description {
   background-color: #9f7aea;
-  color: white;
-  padding: 3px;
+  text-align: center;
 }
-.shoppingCart-assurance .icons {
-  height: 30px;
-  width: 30px;
+
+/* shopping card item */
+.shopping-cart-card-container {
+  margin: 10px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 700px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
 }
-.shopping-cart-content-container {
-  width: 100%;
-  height: 100%;
+.shopping-cart-card-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+.shopping-card-header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
-  gap: 10px;
 }
-.shopping-cart-items-container {
-  width: 70%;
+.shopping-card-content {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+}
+.shopping-card-item-descriptions-container {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  justify-content: space-between;
+  width: 100%;
+  height: 150px;
+}
+.edit-remove-btn-container {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: space-between;
+}
+.item-image-container {
+  height: 150px;
+}
+
+.item-image-container img {
+  height: 100%;
+}
+
+.item-details {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.shopping-card--footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   gap: 10px;
 }
 
-/* shopping cart tab checkout content  */
+.shopping-card-header button {
+  text-decoration: underline;
+}
+
+/* checkout card */
+.payment-card-container {
+  width: 700px;
+}
 .checkout-container {
-  width: 50%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 30px;
-  font-family: "Montserrat", sans-serif;
+  padding: 30px;
 }
 
 .checkout-container hr {
@@ -612,6 +670,13 @@ body {
   align-items: center;
 }
 
+.proceed-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
 .checkout-btn {
   background-color: #333;
   color: #fff;
@@ -627,55 +692,7 @@ body {
   border-color: #000;
 }
 
-/* shopping cart items list card */
-.shopping-cart-item-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-  padding: 10px;
-  border: 1px solid #c13584;
-  border-radius: 12px;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  width: 70%;
-  height: 500px;
-}
-.shopping-card-header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  gap: 10px;
-  width: 100%;
-}
-.item-image-container {
-  width: 30%;
-  height: 100px;
-}
-
-.item-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-  border-radius: 12px;
-}
-.item-details {
-  width: 80%;
-  height: 100px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-.item-price {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-}
-.delivery-date {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
+.shopping-cart-default-page {
+  padding-top: 90px;
+  background-color: #d81f60;
 }

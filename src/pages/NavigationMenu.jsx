@@ -40,7 +40,7 @@ export default function NavigationMenu({ numberOfItemsInCart }) {
             />
           </li>
 
-          <li className="shoppinCart-list-icon-container">
+          <li className="shopping-cart-list-icon-container">
             <Link to="/shopping-cart">
               <img
                 src="./images/nav-img/trolley-cart.png"
@@ -49,9 +49,9 @@ export default function NavigationMenu({ numberOfItemsInCart }) {
               />
             </Link>
             {numberOfItemsInCart > 0 && (
-              <span className="shopping-cart-item-count">
+              <div className="shopping-cart-item-count">
                 {numberOfItemsInCart}
-              </span>
+              </div>
             )}
           </li>
 

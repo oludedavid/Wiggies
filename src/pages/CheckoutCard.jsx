@@ -9,17 +9,17 @@ export default function CheckoutCard() {
             <input type="radio" id="card" name="paymentOption" value="card" />
             <label className="card-payment-options" htmlFor="card">
               <img
-                className="card-img"
+                className="image-icon"
                 src="./images/payout/visa.png"
                 alt="Visa Card icon"
               />
               <img
-                className="card-img"
+                className="image-icon"
                 src="./images/payout/master.png"
                 alt="Master Card icon"
               />
               <img
-                className="card-img"
+                className="image-icon"
                 src="./images/payout/maestro.png"
                 alt="Maestro Card icon"
               />
@@ -35,7 +35,7 @@ export default function CheckoutCard() {
             />
             <label htmlFor="paypal">
               <img
-                className="card-img"
+                className="image-icon"
                 src="./images/payout/paypal.png"
                 alt="PayPal icon"
               />
@@ -52,7 +52,7 @@ export default function CheckoutCard() {
             />
             <label htmlFor="google-pay">
               <img
-                className="card-img"
+                className="image-icon"
                 src="./images/payout/google-pay.png"
                 alt="PayPal icon"
               />
@@ -68,7 +68,7 @@ export default function CheckoutCard() {
             />
             <label htmlFor="klarna" className="klarna-label">
               <img
-                className="card-img"
+                className="image-icon"
                 src="./images/payout/klarna.png"
                 alt="Klarna icon"
               />
@@ -97,7 +97,9 @@ export default function CheckoutCard() {
           <p>Total({40} items)</p>
           <p>£{200.0}</p>
         </section>
-        <button className="checkout-btn">Proceed to checkout</button>
+        <section className="proceed-btn">
+          <button className="checkout-btn">Proceed to checkout</button>
+        </section>
       </section>
     </div>
   );

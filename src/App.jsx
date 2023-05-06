@@ -14,6 +14,8 @@ import LikedProductPage from "./pages/LikedProductPage";
 export default function App() {
   //create a portal for the shopping cart
   const [shoppingCartItems, setShoppingCartItems] = useState([]);
+  const [shoppingCartDefaultPage, setShoppingCartDefaultPage] = useState(false);
+
   function getSelectedAfrowig(afrowig) {
     setShoppingCartItems((prev) => [...prev, afrowig]);
   }
@@ -36,6 +38,7 @@ export default function App() {
             <ShoppingCart
               numberOfItemsInCart={numberOfItemsInCart}
               shoppingCartItems={shoppingCartItems}
+              shoppingCartDefaultPage={shoppingCartDefaultPage}
             />
           }
         />
