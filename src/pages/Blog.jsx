@@ -5,11 +5,7 @@ export default function Blog() {
     <div className="blog-container page-container">
       <h1 className="blog-title">5 Tips for Finding the Perfect Wig</h1>
       <p className="blog-author">Written by: Jane Doe</p>
-      <img
-        src="./images/blog-post-1.jpg"
-        alt="Blog Post"
-        className="blog-image"
-      />
+      <img src="./images/blog.jpg" alt="Blog Post" className="blog-image" />
       <div className="blog-content">
         <p>
           Wigs are a great way to change up your look or to enhance your natural

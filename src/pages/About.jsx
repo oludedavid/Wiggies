@@ -7,7 +7,7 @@ export default function About() {
       <div className="flex flex-col md:flex-row justify-between items-center mb-8">
         <div className="w-full md:w-1/2 mb-4 md:mb-0">
           <img
-            src="./images/about-img-1.jpg"
+            src="./images/productLanding/pic1.jpg"
             alt="About Wiggies"
             className="rounded-md shadow-lg"
           />

@@ -514,6 +514,143 @@ body {
 
 /* 5.  home */
 .home {
+  background: linear-gradient(to right, #9f7aea, #ff6b6b);
+  display: flex;
+  flex-direction: column;
+  padding-top: 100px;
+  width: 100vw;
+  position: relative;
+}
+.home-header {
+  font-size: 4.5rem;
+  font-weight: 700;
+  justify-content: center;
+}
+.home-header h1 {
+  text-align: center;
+  margin-top: 4px;
+  padding-left: 20px;
+  padding-right: 20px;
+  max-width: 600px;
+}
+.home-shopNow-btn {
+  position: relative;
+  font-size: 2rem;
+  width: 200px;
+  height: 55px;
+  padding: 2px;
+  color: #fff;
+  border-radius: 30px;
+  background-color: #d81f60;
+  /* background-color: #333; */
+  background-image: url("https://github.com/oludedavid/Wiggies/blob/master/public/images/butterfly.png");
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: 50%;
+  /* transform the butterfly image */
+  transform: translate(7%, -7%) rotate(24deg);
+}
+
+.home-shopNow-btn:hover {
+  /* transform the butterfly image on hover */
+  transform: translate(10%, -10%) rotate(60deg) scale(1.2);
+}
+
+.btn-butterfly {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 45px;
+  width: 45px;
+  transform: translate(20%, -20%) rotate(30deg);
+}
+
+.home-header .header-image {
+  height: 500px;
+  width: 500px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25), 0 4px 8px rgba(0, 0, 0, 0.25);
+}
+.header-title {
+  position: relative;
+}
+
+.butterfly-img {
+  position: absolute;
+  top: -20px;
+  right: 10px;
+  height: 50px;
+  width: 50px;
+  transform: rotate(-15deg);
+  filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.5));
+}
+
+.home-main-body {
+  padding-top: 140px;
+  padding-left: 70px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.special-offer-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+}
+.special-offer-header {
+  display: flex;
+  width: 100vw;
+  flex-wrap: wrap;
+
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 10px;
+}
+
+.special-offer-card-img-header {
+  height: 100px;
+  width: 100px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+}
+
+.special-offer-card-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 10px;
+  max-width: 400px;
+  padding: 0.5rem;
+  text-align: center;
+  background: linear-gradient(to right, #9f7aea, #ff6b6b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.special-offer-category-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25), 0 4px 8px rgba(0, 0, 0, 0.25);
+  background-color: #fff;
+  border-radius: 10px;
+  transition: transform 0.2s ease-in-out;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.special-offer-category-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
 }
 
 /* 6.  signup container */
